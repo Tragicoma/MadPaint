@@ -1,6 +1,6 @@
 ﻿namespace Paint
 {
-    partial class Form1
+    partial class Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.canvas = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.colorPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.toolPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -53,17 +51,24 @@
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.Pic_New = new System.Windows.Forms.PictureBox();
+            this.Pic_Save = new System.Windows.Forms.PictureBox();
+            this.Pic_Redo = new System.Windows.Forms.PictureBox();
+            this.Pic_Undo = new System.Windows.Forms.PictureBox();
+            this.Pic_Open = new System.Windows.Forms.PictureBox();
+            this.ToolSize = new System.Windows.Forms.FlowLayoutPanel();
+            this.Pic_Small = new System.Windows.Forms.PictureBox();
+            this.Pic_Medium = new System.Windows.Forms.PictureBox();
+            this.Pic_Big = new System.Windows.Forms.PictureBox();
+            this.Pic_Erase = new System.Windows.Forms.PictureBox();
+            this.Canvas = new System.Windows.Forms.PictureBox();
             this.colorPanel.SuspendLayout();
-            this.toolPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -79,26 +84,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_New)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Save)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Redo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Undo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Open)).BeginInit();
+            this.ToolSize.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Small)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Medium)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Big)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Erase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Canvas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // canvas
-            // 
-            this.canvas.BackColor = System.Drawing.SystemColors.Window;
-            this.canvas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.canvas.Location = new System.Drawing.Point(123, 39);
-            this.canvas.Name = "canvas";
-            this.canvas.Size = new System.Drawing.Size(971, 479);
-            this.canvas.TabIndex = 0;
-            this.canvas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.canvas_MouseDown);
-            this.canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.canvas_MouseMove);
-            this.canvas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.canvas_MouseUp);
             // 
             // colorPanel
             // 
-            this.colorPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.colorPanel.Controls.Add(this.pictureBox1);
             this.colorPanel.Controls.Add(this.pictureBox5);
             this.colorPanel.Controls.Add(this.pictureBox2);
@@ -125,17 +125,6 @@
             this.colorPanel.Size = new System.Drawing.Size(105, 238);
             this.colorPanel.TabIndex = 1;
             // 
-            // toolPanel
-            // 
-            this.toolPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.toolPanel.Controls.Add(this.pictureBox22);
-            this.toolPanel.Controls.Add(this.pictureBox23);
-            this.toolPanel.Controls.Add(this.pictureBox24);
-            this.toolPanel.Location = new System.Drawing.Point(12, 283);
-            this.toolPanel.Name = "toolPanel";
-            this.toolPanel.Size = new System.Drawing.Size(105, 235);
-            this.toolPanel.TabIndex = 2;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -146,43 +135,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "color";
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(71, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(28, 27);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Tag = "color";
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Red;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(37, 36);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(28, 27);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Tag = "color";
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(71, 36);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(28, 27);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Tag = "color";
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox5
             // 
@@ -194,7 +147,19 @@
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Tag = "color";
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox5.Click += new System.EventHandler(this.Color_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(71, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(28, 27);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "color";
+            this.pictureBox2.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox6
             // 
@@ -206,7 +171,31 @@
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Tag = "color";
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox6.Click += new System.EventHandler(this.Color_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Red;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Location = new System.Drawing.Point(37, 36);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(28, 27);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "color";
+            this.pictureBox3.Click += new System.EventHandler(this.Color_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(71, 36);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(28, 27);
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "color";
+            this.pictureBox4.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox7
             // 
@@ -218,7 +207,7 @@
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Tag = "color";
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox7.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox8
             // 
@@ -230,7 +219,7 @@
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Tag = "color";
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox8.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox9
             // 
@@ -242,7 +231,7 @@
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Tag = "color";
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox9.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox10
             // 
@@ -254,7 +243,7 @@
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Tag = "color";
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox10.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox11
             // 
@@ -266,7 +255,7 @@
             this.pictureBox11.TabIndex = 10;
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Tag = "color";
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox11.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox12
             // 
@@ -278,7 +267,7 @@
             this.pictureBox12.TabIndex = 11;
             this.pictureBox12.TabStop = false;
             this.pictureBox12.Tag = "color";
-            this.pictureBox12.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox12.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox13
             // 
@@ -290,7 +279,7 @@
             this.pictureBox13.TabIndex = 12;
             this.pictureBox13.TabStop = false;
             this.pictureBox13.Tag = "color";
-            this.pictureBox13.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox13.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox14
             // 
@@ -302,7 +291,7 @@
             this.pictureBox14.TabIndex = 13;
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Tag = "color";
-            this.pictureBox14.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox14.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox15
             // 
@@ -314,7 +303,7 @@
             this.pictureBox15.TabIndex = 14;
             this.pictureBox15.TabStop = false;
             this.pictureBox15.Tag = "color";
-            this.pictureBox15.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox15.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox16
             // 
@@ -326,7 +315,7 @@
             this.pictureBox16.TabIndex = 15;
             this.pictureBox16.TabStop = false;
             this.pictureBox16.Tag = "color";
-            this.pictureBox16.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox16.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox17
             // 
@@ -338,7 +327,7 @@
             this.pictureBox17.TabIndex = 16;
             this.pictureBox17.TabStop = false;
             this.pictureBox17.Tag = "color";
-            this.pictureBox17.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox17.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox18
             // 
@@ -350,7 +339,7 @@
             this.pictureBox18.TabIndex = 17;
             this.pictureBox18.TabStop = false;
             this.pictureBox18.Tag = "color";
-            this.pictureBox18.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox18.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox19
             // 
@@ -362,7 +351,7 @@
             this.pictureBox19.TabIndex = 18;
             this.pictureBox19.TabStop = false;
             this.pictureBox19.Tag = "color";
-            this.pictureBox19.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox19.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox20
             // 
@@ -374,7 +363,7 @@
             this.pictureBox20.TabIndex = 19;
             this.pictureBox20.TabStop = false;
             this.pictureBox20.Tag = "color";
-            this.pictureBox20.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox20.Click += new System.EventHandler(this.Color_Click);
             // 
             // pictureBox21
             // 
@@ -386,71 +375,191 @@
             this.pictureBox21.TabIndex = 20;
             this.pictureBox21.TabStop = false;
             this.pictureBox21.Tag = "color";
-            this.pictureBox21.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox21.Click += new System.EventHandler(this.Color_Click);
             // 
-            // pictureBox22
+            // Pic_New
             // 
-            this.pictureBox22.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.InitialImage = null;
-            this.pictureBox22.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(28, 27);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox22.TabIndex = 19;
-            this.pictureBox22.TabStop = false;
-            this.pictureBox22.Tag = "size";
-            this.pictureBox22.Click += new System.EventHandler(this.pictureBox22_Click);
+            this.Pic_New.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Pic_New.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pic_New.Image = ((System.Drawing.Image)(resources.GetObject("Pic_New.Image")));
+            this.Pic_New.InitialImage = null;
+            this.Pic_New.Location = new System.Drawing.Point(16, 6);
+            this.Pic_New.Name = "Pic_New";
+            this.Pic_New.Size = new System.Drawing.Size(28, 27);
+            this.Pic_New.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_New.TabIndex = 22;
+            this.Pic_New.TabStop = false;
+            this.Pic_New.Tag = "size";
+            this.Pic_New.Click += new System.EventHandler(this.Pic_New_Click);
             // 
-            // pictureBox23
+            // Pic_Save
             // 
-            this.pictureBox23.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.InitialImage = null;
-            this.pictureBox23.Location = new System.Drawing.Point(37, 3);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(28, 27);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox23.TabIndex = 20;
-            this.pictureBox23.TabStop = false;
-            this.pictureBox23.Tag = "size";
-            this.pictureBox23.Click += new System.EventHandler(this.pictureBox23_Click);
+            this.Pic_Save.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Pic_Save.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pic_Save.Image = ((System.Drawing.Image)(resources.GetObject("Pic_Save.Image")));
+            this.Pic_Save.InitialImage = null;
+            this.Pic_Save.Location = new System.Drawing.Point(84, 6);
+            this.Pic_Save.Name = "Pic_Save";
+            this.Pic_Save.Size = new System.Drawing.Size(28, 27);
+            this.Pic_Save.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_Save.TabIndex = 23;
+            this.Pic_Save.TabStop = false;
+            this.Pic_Save.Tag = "size";
+            this.Pic_Save.Click += new System.EventHandler(this.Pic_Save_Click);
             // 
-            // pictureBox24
+            // Pic_Redo
             // 
-            this.pictureBox24.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
-            this.pictureBox24.InitialImage = null;
-            this.pictureBox24.Location = new System.Drawing.Point(71, 3);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(28, 27);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox24.TabIndex = 21;
-            this.pictureBox24.TabStop = false;
-            this.pictureBox24.Tag = "size";
-            this.pictureBox24.Click += new System.EventHandler(this.pictureBox24_Click);
+            this.Pic_Redo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Pic_Redo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pic_Redo.Image = ((System.Drawing.Image)(resources.GetObject("Pic_Redo.Image")));
+            this.Pic_Redo.InitialImage = null;
+            this.Pic_Redo.Location = new System.Drawing.Point(157, 6);
+            this.Pic_Redo.Name = "Pic_Redo";
+            this.Pic_Redo.Size = new System.Drawing.Size(28, 27);
+            this.Pic_Redo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_Redo.TabIndex = 24;
+            this.Pic_Redo.TabStop = false;
+            this.Pic_Redo.Tag = "size";
+            this.Pic_Redo.Click += new System.EventHandler(this.Pic_Redo_Click);
             // 
-            // Form1
+            // Pic_Undo
+            // 
+            this.Pic_Undo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Pic_Undo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pic_Undo.Image = ((System.Drawing.Image)(resources.GetObject("Pic_Undo.Image")));
+            this.Pic_Undo.InitialImage = null;
+            this.Pic_Undo.Location = new System.Drawing.Point(123, 6);
+            this.Pic_Undo.Name = "Pic_Undo";
+            this.Pic_Undo.Size = new System.Drawing.Size(28, 27);
+            this.Pic_Undo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_Undo.TabIndex = 25;
+            this.Pic_Undo.TabStop = false;
+            this.Pic_Undo.Tag = "size";
+            this.Pic_Undo.Click += new System.EventHandler(this.Pic_Undo_Click);
+            // 
+            // Pic_Open
+            // 
+            this.Pic_Open.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Pic_Open.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pic_Open.Image = ((System.Drawing.Image)(resources.GetObject("Pic_Open.Image")));
+            this.Pic_Open.InitialImage = null;
+            this.Pic_Open.Location = new System.Drawing.Point(50, 6);
+            this.Pic_Open.Name = "Pic_Open";
+            this.Pic_Open.Size = new System.Drawing.Size(28, 27);
+            this.Pic_Open.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_Open.TabIndex = 26;
+            this.Pic_Open.TabStop = false;
+            this.Pic_Open.Tag = "size";
+            this.Pic_Open.Click += new System.EventHandler(this.Pic_Open_Click);
+            // 
+            // ToolSize
+            // 
+            this.ToolSize.Controls.Add(this.Pic_Small);
+            this.ToolSize.Controls.Add(this.Pic_Medium);
+            this.ToolSize.Controls.Add(this.Pic_Big);
+            this.ToolSize.Location = new System.Drawing.Point(12, 283);
+            this.ToolSize.Name = "ToolSize";
+            this.ToolSize.Size = new System.Drawing.Size(102, 33);
+            this.ToolSize.TabIndex = 22;
+            // 
+            // Pic_Small
+            // 
+            this.Pic_Small.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Pic_Small.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pic_Small.Image = ((System.Drawing.Image)(resources.GetObject("Pic_Small.Image")));
+            this.Pic_Small.InitialImage = null;
+            this.Pic_Small.Location = new System.Drawing.Point(3, 3);
+            this.Pic_Small.Name = "Pic_Small";
+            this.Pic_Small.Size = new System.Drawing.Size(28, 27);
+            this.Pic_Small.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_Small.TabIndex = 19;
+            this.Pic_Small.TabStop = false;
+            this.Pic_Small.Tag = "size";
+            this.Pic_Small.Click += new System.EventHandler(this.Pic_Small_Click);
+            // 
+            // Pic_Medium
+            // 
+            this.Pic_Medium.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Pic_Medium.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pic_Medium.Image = ((System.Drawing.Image)(resources.GetObject("Pic_Medium.Image")));
+            this.Pic_Medium.InitialImage = null;
+            this.Pic_Medium.Location = new System.Drawing.Point(37, 3);
+            this.Pic_Medium.Name = "Pic_Medium";
+            this.Pic_Medium.Size = new System.Drawing.Size(28, 27);
+            this.Pic_Medium.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_Medium.TabIndex = 20;
+            this.Pic_Medium.TabStop = false;
+            this.Pic_Medium.Tag = "size";
+            this.Pic_Medium.Click += new System.EventHandler(this.Pic_Medium_Click);
+            // 
+            // Pic_Big
+            // 
+            this.Pic_Big.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Pic_Big.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pic_Big.Image = ((System.Drawing.Image)(resources.GetObject("Pic_Big.Image")));
+            this.Pic_Big.InitialImage = null;
+            this.Pic_Big.Location = new System.Drawing.Point(71, 3);
+            this.Pic_Big.Name = "Pic_Big";
+            this.Pic_Big.Size = new System.Drawing.Size(28, 27);
+            this.Pic_Big.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_Big.TabIndex = 21;
+            this.Pic_Big.TabStop = false;
+            this.Pic_Big.Tag = "size";
+            this.Pic_Big.Click += new System.EventHandler(this.Pic_Big_Click);
+            // 
+            // Pic_Erase
+            // 
+            this.Pic_Erase.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Pic_Erase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pic_Erase.Image = ((System.Drawing.Image)(resources.GetObject("Pic_Erase.Image")));
+            this.Pic_Erase.InitialImage = null;
+            this.Pic_Erase.Location = new System.Drawing.Point(15, 322);
+            this.Pic_Erase.Name = "Pic_Erase";
+            this.Pic_Erase.Size = new System.Drawing.Size(28, 27);
+            this.Pic_Erase.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_Erase.TabIndex = 22;
+            this.Pic_Erase.TabStop = false;
+            this.Pic_Erase.Tag = "size";
+            this.Pic_Erase.Click += new System.EventHandler(this.Pic_Erase_Click);
+            // 
+            // Canvas
+            // 
+            this.Canvas.BackColor = System.Drawing.SystemColors.Window;
+            this.Canvas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Canvas.Location = new System.Drawing.Point(123, 39);
+            this.Canvas.Name = "Canvas";
+            this.Canvas.Size = new System.Drawing.Size(975, 488);
+            this.Canvas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Canvas.TabIndex = 27;
+            this.Canvas.TabStop = false;
+            this.Canvas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Canvas_MouseDown);
+            this.Canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Canvas_MouseMove);
+            this.Canvas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Canvas_MouseUp);
+            // 
+            // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1106, 530);
-            this.Controls.Add(this.toolPanel);
+            this.ClientSize = new System.Drawing.Size(1114, 540);
+            this.Controls.Add(this.Canvas);
+            this.Controls.Add(this.ToolSize);
+            this.Controls.Add(this.Pic_Open);
+            this.Controls.Add(this.Pic_Erase);
+            this.Controls.Add(this.Pic_Undo);
+            this.Controls.Add(this.Pic_Redo);
+            this.Controls.Add(this.Pic_Save);
             this.Controls.Add(this.colorPanel);
-            this.Controls.Add(this.canvas);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.Pic_New);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form";
+            this.Text = "Purplez";
             this.colorPanel.ResumeLayout(false);
-            this.toolPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -466,18 +575,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_New)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Save)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Redo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Undo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Open)).EndInit();
+            this.ToolSize.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Small)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Medium)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Big)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Erase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Canvas)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel canvas;
         private System.Windows.Forms.FlowLayoutPanel colorPanel;
-        private System.Windows.Forms.FlowLayoutPanel toolPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -499,9 +613,17 @@
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.PictureBox Pic_New;
+        private System.Windows.Forms.PictureBox Pic_Save;
+        private System.Windows.Forms.PictureBox Pic_Redo;
+        private System.Windows.Forms.PictureBox Pic_Undo;
+        private System.Windows.Forms.PictureBox Pic_Open;
+        private System.Windows.Forms.FlowLayoutPanel ToolSize;
+        private System.Windows.Forms.PictureBox Pic_Small;
+        private System.Windows.Forms.PictureBox Pic_Medium;
+        private System.Windows.Forms.PictureBox Pic_Big;
+        private System.Windows.Forms.PictureBox Pic_Erase;
+        private System.Windows.Forms.PictureBox Canvas;
     }
 }
 
