@@ -198,6 +198,7 @@ namespace Paint
             sample = false;
             flood = true;
         }
+
         private void Pic_Sample_Click(object sender, EventArgs e)
         {
             UI.SelectedTool(sender, ToolSize);
@@ -212,12 +213,14 @@ namespace Paint
             UI.ClickOnce(sender);
             bm = Image.GrayScale(bm);
         }
+
         private void Pic_Negative_Click(object sender, EventArgs e)
         {
             FileManager.NewOldBitmap(bm, OldStack, RedoStack);
             UI.ClickOnce(sender);
             bm = Image.Negative(bm);
         }
+
         private void Pic_Blue_Click(object sender, EventArgs e)
         {
             FileManager.NewOldBitmap(bm, OldStack, RedoStack);
@@ -225,8 +228,8 @@ namespace Paint
             bm = Image.Blue(bm);
         }
 
-        ///File ToolBar///
-        //////////////////
+                    ///File ToolBar///
+                    //////////////////
         private void Pic_New_Click(object sender, EventArgs e)
         {
             UI.ClickOnce(sender);

@@ -694,7 +694,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(901, 558);
             this.Name = "Form";
-            this.Text = "Purplez";
+            this.Text = "Purplez Paint";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_FormClosing);
             this.SizeChanged += new System.EventHandler(this.Form_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.Canvas)).EndInit();
