@@ -10,6 +10,14 @@ namespace Paint
 {
     class UI
     {
+
+        public static void SelectedTool(object sender,FlowLayoutPanel panel)
+        {
+            PictureBox p = (PictureBox)sender;
+            ClearBoxes(panel);
+            p.BorderStyle = BorderStyle.Fixed3D;
+        }
+
         public static void ClickOnce(object sender)
         {
             PictureBox p = (PictureBox)sender;
